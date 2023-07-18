@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">課題12</string>
+    <string name="tv_title">タイトル</string>
+    <string name="tv_name">名前</string>
+    <string name="tv_mail">メールアドレス</string>
+    <string name="tv_comment">質問内容</string>
+    <string name="bt_confirm">確認</string>
+    <string name="bt_send">送信</string>
+    <string name="bt_clear">クリア</string>
+    <string name="dialog_title">内容確認</string>
+    <string name="dialog_msg">送信しますか？</string>
+    <string name="dialog_btn_ok">送信</string>
+    <string name="dialog_btn_ng">キャンセル</string>
+    <string name="dialog_ok_toast">送信しました</string>
+    <string name="dialog_ng_toast">キャンセルしました</string>
+</resources>

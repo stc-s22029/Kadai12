@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -25,10 +26,20 @@ public class MailConfirmDialogFragment extends DialogFragment {
     private class DialogButtonClickListener implements DialogInterface.OnClickListener{
         @Override
         public void onClick(DialogInterface dialog, int which) {
+            EditText inputTitle = getActivity().findViewById(R.id.etTitle);
+            EditText inputName = getActivity().findViewById(R.id.etName);
+            EditText inputMail = getActivity().findViewById(R.id.etMail);
+            EditText inputComment = getActivity().findViewById(R.id.etComment);
+            String name = inputName.getText().toString();
+            String title = inputTitle.getText().toString();
+            String mail = inputMail.getText().toString();
+            String comment = inputComment.getText().toString();
+            String show = "名前：" + name + "タイトル：" + title +
+                    "メールアドレス：" + mail + "質問内容：" + comment;
             String msg = "";
             switch (which) {
                 case DialogInterface.BUTTON_POSITIVE:
-                    msg = getString(R.string.dialog_ok_toast);
+                    msg = show;
                     break;
                 case DialogInterface.BUTTON_NEGATIVE:
                     msg = getString(R.string.dialog_ng_toast);

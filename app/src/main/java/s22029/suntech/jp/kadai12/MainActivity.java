@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
             else if(id == R.id.btConfirm){
                 MailConfirmDialogFragment dialogFragment = new MailConfirmDialogFragment();
                 dialogFragment.show(getSupportFragmentManager(),"MailConfirmDialogFragment");
-                Snackbar.make(v,show,Snackbar.LENGTH_LONG).show();
             }
             else if(id == R.id.btClear){
                 inputTitle.setText("");
